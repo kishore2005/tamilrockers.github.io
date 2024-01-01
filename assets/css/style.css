@@ -381,7 +381,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  position: fixed;
+ 
   top: 0;
   left: 0;
   width: 100%;
