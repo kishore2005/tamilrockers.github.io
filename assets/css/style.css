@@ -258,11 +258,13 @@ body.active { overflow: hidden; }
  */
 
 .movies-list {
+  scroll-behavior: initial;
   display: grid;
   gap: 50px;
 }
 
 .movie-card {
+  scroll-behavior: initial;
   height: 100%;
   display: flex;
   flex-direction: column;
