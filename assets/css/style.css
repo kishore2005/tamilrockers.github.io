@@ -258,19 +258,50 @@ body.active { overflow: hidden; }
  */
 
 .movies-list {
-  scroll-behavior: initial;
   display: grid;
   gap: 50px;
 }
 
 .movie-card {
+  animation: slide 10s linear infinite ;
   scroll-behavior: initial;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+@keyframes slide {
+  0% {
+  transform: translateX(-0%);
+  }
+  25%{
+  transform: translateX(-50%);
+  }
+  30% {
+  transform: translateX(-100%);
+  }
+  50%{
+  transform: translateX(-150%);
+  }
+  55%{
+  transform: translateX(-200%);
+  }
+  75%{
+  transform: translateX(-250%);
+  }
+  80%{
+  transform: translateX(-300%);
+  }
+  90%{
+    transform: translateX(-350%);
+    }
+  100%{
+      transform: translateX(-400%);
+      }
+        
+  
+  
+}
 .movie-card .card-banner {
   position: relative;
   background: var(--gunmetal-1);
@@ -383,7 +414,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
- 
+  position: ;
   top: 0;
   left: 0;
   width: 100%;
